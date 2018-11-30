@@ -1,0 +1,23 @@
+
+server:
+  port: 8888
+debug: true
+
+spring:
+  security:
+    user:
+      name: admin
+      password: s3cr3t
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/arturhc/user-accounts-config.git
+          clone-on-start: true
+          timeout: 6
+          repos:
+            user-accounts:
+              uri: https://github.com/arturhc/user-accounts-config.git
+              pattern: user-accounts
+              force-pull: true
+              
