@@ -20,4 +20,8 @@ spring:
               uri: https://github.com/arturhc/user-accounts-config.git
               pattern: user-accounts
               force-pull: true
+            blog-service:
+              uri: https://github.com/arturhc/blog-service-config.git
+              pattern: blog-service
+              force-pull: true
               
